@@ -1,0 +1,57 @@
+/* Paleta inspirada no cute-photobooth: marrom suave, rosa e tons de creme */
+:root {
+        --marrom: #8c5b4a;
+        --rosa: #ff7aa2;
+        --rosa-claro: #ffe3ec;
+        --creme: #fdf3ee;
+        --bege: #f3dcd2;
+      }
+      
+      body { margin: 0; padding: 28px 16px 24px; background: var(--creme); color: var(--marrom); overflow-x: hidden;
+             font-family: 'Itim', 'Trebuchet MS', cursive, sans-serif; text-align: center; }
+      h1 { font-size: 34px; margin: 0 0 16px; cursor: pointer; font-weight: 400; }
+      #status { margin: 0 0 40px; font-size: 18px; }   
+      
+      .layout { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 32px; }
+      .coluna-camera { width: 400px; max-width: 100%; }
+      .cabine { position: relative; border: 6px solid #fff; border-radius: 16px;
+                overflow: hidden; background: var(--bege); box-shadow: 0 10px 30px rgba(140, 91, 74, .2); }
+      video { display: block; width: 100%; transform: scaleX(-1); min-height: 280px; }
+      .acoes { margin-top: 14px; }
+      #contagem { display: none; position: absolute; inset: 0; align-items: center; justify-content: center;
+                  font-size: 120px; font-weight: bold; color: #fff; background: rgba(0, 0, 0, .25);
+                  text-shadow: 0 4px 20px rgba(0, 0, 0, .6); }
+      #flash { position: absolute; inset: 0; background: #fff; opacity: 0; transition: opacity .3s; }
+      
+      #tira { height: min(calc(100vh - 185px), 715px); min-height: 420px; width: auto;
+              border-radius: 16px;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, .15); }
+      
+      .painel { width: 300px; max-width: 100%; box-sizing: border-box; background: #fff;
+                border: 2px solid var(--bege); border-radius: 16px; padding: 8px 18px 16px; text-align: left; }
+      .painel p { margin: 12px 0 4px; font-size: 20px; }
+      .segundos { margin-top: 8px; font-size: 16px; }
+      
+      button, .botao { font-family: inherit; font-size: 16px; border: 2px solid var(--marrom); border-radius: 8px;
+                       padding: 4px 12px; margin: 3px; cursor: pointer; background: #fff; color: var(--marrom);
+                       text-decoration: none; display: inline-block; transition: background .2s, transform .2s; }
+      button:hover, .botao:hover { background: var(--rosa-claro); transform: translateY(-1px); }
+      .principal { font-size: 20px; padding: 8px 18px; }
+      #baixar { display: none; background: var(--rosa-claro); font-size: 18px; padding: 6px 14px; }
+      .adesivo img { width: 26px; height: 26px; vertical-align: middle; }
+      button:focus-visible { outline: 3px solid var(--rosa); outline-offset: 2px; }
+      input[type=number] { width: 52px; font-family: inherit; font-size: 16px; padding: 3px 6px; border-radius: 8px;
+                           border: 2px solid var(--marrom); color: var(--marrom); background: #fff; }
+      
+      @media (max-height: 700px) and (min-width: 961px) {
+        body { padding-top: 14px; }
+        #status { margin-bottom: 24px; }
+        #tira { height: calc(100vh - 140px); }
+        .painel { padding: 4px 16px 12px; }
+        .painel p { margin: 8px 0 2px; }
+      }
+      
+      @media (max-width: 960px) {
+        #tira { height: auto; min-height: 0; width: 230px; }
+        .painel { width: 400px; }
+      }

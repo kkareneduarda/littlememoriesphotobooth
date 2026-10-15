@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>little memories</title>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>₊✩‧₊˚ smilee!! ˚₊✩‧₊</h1>
+
+  <div class="layout">
+    <div class="coluna-camera">
+      <div class="cabine">
+        <video id="video" autoplay playsinline muted></video>
+        <div id="contagem"></div>
+        <div id="flash"></div>
+      </div>
+      <div class="acoes">
+        <button class="principal" onclick="ligarCamera()">Ativar câmera</button>
+        <button class="principal" onclick="tirarFoto()">Tirar fotos</button>
+        <a id="baixar" class="botao" download="minha-tira.png">Baixar tira</a>
+      </div>
+    </div>
+
+    <canvas id="tira" width="360" height="1120"></canvas>
+
+    <div class="painel">
+      <p>Filtros ⋆𐙚 ̊.˚</p><div id="listaFiltros"></div>
+      <p>Moldura ⋆.˚</p><div id="listaMolduras"></div>
+      <p>Stickers ⋆𐙚 ̊.˚</p><div id="listaAdesivos"></div>
+      <p>Extras ⋆.˚</p>
+      <button onclick="pedirLegenda()">legenda ᯓᡣ𐭩</button>
+      <div class="segundos">Segundos de contagem: <input type="number" id="segundos" value="3" min="1" max="5"></div>
+    </div>
+  </div>
+
+  <canvas class="foto" width="320" height="240" hidden></canvas>
+  <canvas class="foto" width="320" height="240" hidden></canvas>
+  <canvas class="foto" width="320" height="240" hidden></canvas>
+  <canvas class="foto" width="320" height="240" hidden></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
