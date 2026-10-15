@@ -214,4 +214,3 @@ Desenvolvido por **kkareneduarda**.
 
 ---
 
-Feito com carinho e muitos 💖✨
