@@ -203,7 +203,6 @@ O Little Memories **não copia o código** do projeto original: foi escrito do z
 
 **Sobre os direitos das imagens:** os adesivos `leaf.png` e `sparkles.png` são do projeto da lovesulei, e os direitos pertencem à criadora. O repositório original não declara uma licença. Se for publicar este projeto na internet, peça autorização a ela ou troque esses adesivos por imagens suas.
 
-Agradeço também à comunidade do [Google Fonts](https://fonts.google.com/) pela fonte Itim.
 
 ---
 
